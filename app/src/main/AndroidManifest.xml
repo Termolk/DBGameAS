@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HoFActivity"
+            android:name=".AllResultsActivity"
             android:label="@string/title_activity_ho_f"></activity>
         <activity android:name=".StatActivity"></activity>
     </application>

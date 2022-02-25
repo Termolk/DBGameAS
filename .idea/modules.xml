@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DBGameAS.iml" filepath="$PROJECT_DIR$/.idea/modules/DBGameAS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DBGameAS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DBGameAS.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DBGameASGreat.iml" filepath="$PROJECT_DIR$/.idea/modules/DBGameASGreat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DBGameASGreat.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DBGameASGreat.app.iml" />
     </modules>
   </component>
 </project>

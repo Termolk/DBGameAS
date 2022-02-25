@@ -5,14 +5,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class HoFActivity extends Activity {
+public class AllResultsActivity extends Activity {
 
 	private DBManager dbManager;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_ho_f);
+		setContentView(R.layout.activity_all_results);
 		dbManager = DBManager.getInstance(this);
 		
 		TextView restv = (TextView)this.findViewById(R.id.results);

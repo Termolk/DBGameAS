@@ -3,6 +3,7 @@ package ru.samsung.itschool.dbgame;
 import java.io.File;
 import java.util.ArrayList;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -13,6 +14,9 @@ public class DBManager {
 	 */
 	private Context context;
 	private String DB_NAME = "game.db";
+	private final String TABLE_NAME = "RESULTS";
+	private final String COLUMN_USER = "USERNAME";
+	private final String COLUMN_SCORE = "SCORE";
 
 	private SQLiteDatabase db;
 
@@ -28,28 +32,29 @@ public class DBManager {
 	private DBManager(Context context) {
 		this.context = context;
 		db = context.openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE, null);
-		createTablesIfNeedBe(); 
+		createTablesIfNeedBe();
 	}
 
 	void addResult(String username, int score) {
-		db.execSQL("INSERT INTO RESULTS VALUES ('" + username + "', " + score
-				+ ");");
+		ContentValues contentValues = new ContentValues();
+		contentValues.put(COLUMN_USER, username);
+		contentValues.put(COLUMN_SCORE, score);
+
+		db.insert(TABLE_NAME, null, contentValues);
 	}
-	// Player One 150
-	// Запрос
-	// INSERT INTO RESULTS VALUES('Player One', 150);
+
 
 
 
 	ArrayList<Result> getAllResults() {
 		ArrayList<Result> data = new ArrayList<Result>();
-		Cursor cursor = db.rawQuery("SELECT * FROM RESULTS;", null);
+		Cursor cursor = db.rawQuery("SELECT * FROM" + " " + TABLE_NAME + ";", null);
 		boolean hasMoreData = cursor.moveToFirst();
 
 		while (hasMoreData) {
-			String name = cursor.getString(cursor.getColumnIndex("USERNAME"));
+			String name = cursor.getString(cursor.getColumnIndex(COLUMN_USER));
 			int score = Integer.parseInt(cursor.getString(cursor
-					.getColumnIndex("SCORE")));
+					.getColumnIndex(COLUMN_SCORE)));
 			data.add(new Result(name, score));
 			hasMoreData = cursor.moveToNext();
 		}
@@ -58,7 +63,7 @@ public class DBManager {
 	}
 
 	private void createTablesIfNeedBe() {
-		db.execSQL("CREATE TABLE IF NOT EXISTS RESULTS (USERNAME TEXT, SCORE INTEGER);");
+		db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME + "(" + " '" + COLUMN_USER + "' " + "TEXT, " + COLUMN_SCORE + " INTEGER);");
 	}
 
 }
