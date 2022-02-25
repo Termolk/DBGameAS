@@ -94,12 +94,12 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/sergejlogacev/AndroidStudioProjects/DBGameASGreat/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
 		ADDED from /Users/sergejlogacev/AndroidStudioProjects/DBGameASGreat/app/src/main/AndroidManifest.xml:21:27-74
-activity#ru.samsung.itschool.dbgame.HoFActivity
+activity#ru.samsung.itschool.dbgame.AllResultsActivity
 ADDED from /Users/sergejlogacev/AndroidStudioProjects/DBGameASGreat/app/src/main/AndroidManifest.xml:24:9-26:68
 	android:label
 		ADDED from /Users/sergejlogacev/AndroidStudioProjects/DBGameASGreat/app/src/main/AndroidManifest.xml:26:13-56
 	android:name
-		ADDED from /Users/sergejlogacev/AndroidStudioProjects/DBGameASGreat/app/src/main/AndroidManifest.xml:25:13-40
+		ADDED from /Users/sergejlogacev/AndroidStudioProjects/DBGameASGreat/app/src/main/AndroidManifest.xml:25:13-47
 activity#ru.samsung.itschool.dbgame.StatActivity
 ADDED from /Users/sergejlogacev/AndroidStudioProjects/DBGameASGreat/app/src/main/AndroidManifest.xml:27:9-59
 	android:name

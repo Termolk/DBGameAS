@@ -37,6 +37,7 @@ public class DBManager {
 
 	void addResult(String username, int score) {
 		ContentValues contentValues = new ContentValues();
+
 		contentValues.put(COLUMN_USER, username);
 		contentValues.put(COLUMN_SCORE, score);
 
@@ -48,6 +49,7 @@ public class DBManager {
 
 	ArrayList<Result> getAllResults() {
 		ArrayList<Result> data = new ArrayList<Result>();
+
 		Cursor cursor = db.rawQuery("SELECT * FROM" + " " + TABLE_NAME + ";", null);
 		boolean hasMoreData = cursor.moveToFirst();
 
