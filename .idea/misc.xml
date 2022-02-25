@@ -5,7 +5,9 @@
       <map>
         <entry key="app/src/main/res/layout/activity_all_results.xml" value="0.17617753623188406" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_recycler_view_for_results.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_recycler_view_items_all_results.xml" value="0.17617753623188406" />
+        <entry key="app/src/main/res/layout/activity_stat.xml" value="0.1" />
       </map>
     </option>
   </component>
