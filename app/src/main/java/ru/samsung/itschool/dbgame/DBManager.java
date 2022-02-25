@@ -44,6 +44,10 @@ public class DBManager {
 		db.insert(TABLE_NAME, null, contentValues);
 	}
 
+	void clearTable() {
+		db.execSQL("DELETE FROM " + TABLE_NAME + ";");
+	}
+
 
 
 

@@ -58,12 +58,16 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		gameResult.setText(((int) (Math.random() * 1001))+"");
+		gameResult.setText(((int) (Math.random() * 1001)) + "");
 		gameResult.startAnimation(play);
 
 	}
 
-	public void showHoF(View v) {
+	public void showAllResults(View v) {
 		startActivity(new Intent(this, AllResultsActivity.class));
+	}
+
+	public void clearTable(View view) {
+		dbManager.clearTable();
 	}
 }

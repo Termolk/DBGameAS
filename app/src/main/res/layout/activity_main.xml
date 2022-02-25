@@ -81,6 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clearTable"
             android:text="Clear"
             android:textSize="25dp" />
 
@@ -88,7 +89,7 @@
             android:id="@+id/button_go_to_all_results"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="showHoF"
+            android:onClick="showAllResults"
             android:layout_weight="3"
             android:layout_gravity="center_horizontal"
             android:text="All results"
