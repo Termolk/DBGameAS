@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
 	static DBManager dbManager;
+	static int totalGames = 0;
 
 	EditText playerName;
 	TextView gameResult;
@@ -60,6 +61,7 @@ public class MainActivity extends Activity {
 
 		gameResult.setText(((int) (Math.random() * 1001)) + "");
 		gameResult.startAnimation(play);
+		totalGames++;
 
 	}
 
