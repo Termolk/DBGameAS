@@ -1,6 +1,7 @@
 package ru.samsung.itschool.dbgame;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +49,19 @@ public class AdapterRecyclerViewForResults extends RecyclerView.Adapter<AdapterR
 
         textViewUserName.setText(userName);
         textViewScore.setText(score);
+
+
+        //Wanna to set background color for only a first elem in all elements in recycler view
+//        if (!MainActivity.wasFirst) {
+//            holder.itemView.findViewById(R.id.recyclerVieww).setBackgroundColor(Color.YELLOW);
+//            MainActivity.wasFirst = true;
+//        }
+        if (Integer.parseInt(score) >= 500) {
+            textViewScore.setTextColor(Color.RED);
+        }
+        else {
+            textViewScore.setTextColor(Color.MAGENTA);
+        }
 
     }
 
