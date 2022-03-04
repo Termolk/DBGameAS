@@ -21,7 +21,7 @@ public class StatActivity extends Activity {
         dbManager = DBManager.getInstance(this);
 
         textView = findViewById(R.id.textView2);
-        textView.setText("Games played: " + dbManager.allGames());
+        textView.setText("Games played: " + dbManager.getAllResults().size());
 
 
 

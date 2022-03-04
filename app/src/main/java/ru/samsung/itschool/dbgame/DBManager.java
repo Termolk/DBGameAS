@@ -68,13 +68,6 @@ public class DBManager {
 		return data;
 	}
 
-	// Wanna to create request for get count the all raw
-	int allGames () {
-//		Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM " + TABLE_NAME + ";", null);
-//		int allGames = Integer.parseInt(cursor.getString(cursor
-//				.getColumnIndex(COLUMN_USER)));
-		return 1;
-	}
 
 	ArrayList<Result> getGroupByUserResults(){
 		ArrayList<Result> data = new ArrayList<Result>();
